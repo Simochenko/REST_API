@@ -16,3 +16,5 @@ class TestMarkets:
     def test_values_must_be_numbers(self):
         for value in self.response.json():
             assert isinstance(value, int) or isinstance(value, float), "value is not a number"
+
+# pytest -s -v test_markets.py
